@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Binance Trading Signal Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Al Binance Trading Signal Bot</h1>
+        
+        <div class="api-section">
+            <input type="text" id="binanceApiKey" placeholder="Enter Binance API Key">
+            <input type="text" id="binanceSecretKey" placeholder="Enter Binance Secret Key">
+            <input type="text" id="chatgptApiKey" placeholder="Enter ChatGPT API Key">
+            <input type="text" id="deepseekApiKey" placeholder="Enter DeepSeek API Key">
+            <input type="text" id="geminiApiKey" placeholder="Enter Gemini API Key">
+            <input type="text" id="llamaApiKey" placeholder="Enter Llama API Key">
+            <button onclick="startTrading()">Start Trading</button>
+        </div>
+
+        <canvas id="tradeChart"></canvas>
+
+        <div class="signal-section">
+            <h2>Trading Signal: <span id="tradeSignal">Loading...</span></h2>
+            <button id="buyBtn">BUY</button>
+            <button id="sellBtn">SELL</button>
+            <button id="holdBtn">HOLD</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
